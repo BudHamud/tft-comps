@@ -26,7 +26,7 @@ let btn = document.getElementById('quizBtn');
 btn.addEventListener('click', osu);
 
 function osu() {
-let usu = prompt("Ingrese un campeón de TFT (solo minúsculas)");
+let usu = prompt("Ingrese un campeón de TFT (solo minúsculas, sin espacios y sin apóstrofes)");
 
 if (usu == "talon" || usu == "leona" || usu == "twitch" || usu == "ekko" || usu == "khazix" || usu == "nocturne" || usu == "syndra") {
     alert("Debonair Assasin");
@@ -62,5 +62,7 @@ if (usu == "talon" || usu == "leona" || usu == "twitch" || usu == "ekko" || usu 
     alert("Arcanist (no uses esta mierda)");
 } else if (usu == "zeri") {
     alert("Syndicate Debonairs");
+} else {
+    alert("Ni idea bro, fijate de escribir bien sin espacios, minúsculas o apóstrofes. Por ej: Cho'Gath → chogath")
 }
 }
