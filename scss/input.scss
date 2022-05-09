@@ -1,3 +1,8 @@
+$mainColor: #5F7161;
+$secColor: #6D8B74;
+$triColor: #EFEAD8;
+$markColor: #D0C9C0;
+
 * {
     font-family: sans-serif;
     margin: 0;
@@ -24,6 +29,7 @@ header {
 }
 
 main {
+    color: $triColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,21 +40,45 @@ main {
     background-size: cover;
     section {
         width: 60%;
-        background-color: palevioletred;
+        background-color: $mainColor;
         text-align: center;
         padding: 20px;
         h1 {
             margin-bottom: 20px;
         }
+        input {
+            margin: 10px;
+        }
         button {
+            margin-top: 10px;
             padding: 10px;
-            background-color: yellowgreen;
+            background-color: $markColor;
             font-weight: 600;
             border-radius: 20px;
             cursor: pointer;
             &:hover {
                 opacity: 0.8;
             }
+        }
+    }
+    .champool {
+        form {
+            select {
+                width: 50%;
+                padding: 10px;
+                background-color: #053030;
+                color: $triColor;
+                margin: 5px 0 20px 0;
+            }
+        }
+    }
+    .champcost {
+        display: flex;
+        flex-direction: column;
+        article {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
         }
     }
 }

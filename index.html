@@ -19,10 +19,133 @@
         </nav>
     </header>
     <main>
-        <section>
-        <h1>Descubre la composición de TFT perfecta para tu personaje</h1>
-        <button id="quizBtn">APRETAME UACHO</button>
-        </section>
+        <section class="champool">
+            <h1>Adivinador de comps TFT 2.0</h1>
+            <form name="form" action="" method="get">
+                <h2>Campeón de costo 1</h2>
+                <select name="champ1">
+                <option disabled selected>Seleccione un campeón de costo 1</option>
+                <option value="brand">brand (arcanist/debonair)</option>
+                <option value="caitlyn">caitlyn (enforcer/sniper)</option>
+                <option value="camille">camille (clockwork/challenger)</option>
+                <option value="darius">darius</option>
+                <option value="ezreal">ezreal</option>
+                <option value="illaoi">illaoi</option>
+                <option value="jarvan">jarvan</option>
+                <option value="kassadin">kassadin</option>
+                <option value="nocturne">nocturne</option>
+                <option value="poppy">poppy</option>
+                <option value="singed">singed</option>
+                <option value="twitch">twitch</option>
+                <option value="ziggs">ziggs</option>
+                </select>
+                
+                </option>
+                <h2>Campeón de costo 2</h2>
+                <select name="champ2" id="champ2">
+                <option disabled selected>Seleccione un campeón de costo 2</option>
+                <option value="ashe">ashe (syndicate/sniper)</option>
+                <option value="blitzcrank">blitzcrank</option>
+                <option value="corki">corki</option>
+                <option value="lulu">lulu</option>
+                <option value="quinn">quinn</option>
+                <option value="reksai">reksai</option>
+                <option value="sejuani">sejuani</option>
+                <option value="swain">swain</option>
+                <option value="syndra">syndra</option>
+                <option value="talon">talon</option>
+                <option value="warwick">warwick</option>
+                <option value="zilean">zilean</option>
+                <option value="zyra">zyra</option>
+                
+                </select>
+
+            <h2>Campeón de costo 3</h2>
+            <select name="champ3" id="champ3">
+                <option disabled selected>Seleccione un campeón de costo 3</option>
+                <option value="chogath">chogath (mutant/colossus/bruiser)</option>
+                <option value="ekko">ekko</option>
+                <option value="gangplank">gangplank</option>
+                <option value="gnar">gnar</option>
+                <option value="leona">leona</option>
+                <option value="lucian">lucian</option>
+                <option value="malzahar">malzahar</option>
+                <option value="missfortune">missfortune</option>
+                <option value="morgana">morgana</option>
+                <option value="senna">senna</option>
+                <option value="tryndamere">tryndamere</option>
+                <option value="vex">vex</option>
+                <option value="zac">zac</option>
+            </select>
+
+            <h2>Campeón de costo 4</h2>
+            <select name="champ4" id="champ4">
+                <option disabled selected>Seleccione un campeón de costo 4</option>
+                <option value="ahri">Ahri (syndicate/arcanist)</option>
+                <option value="alistar">Alistar</option>
+                <option value="braum">Braum</option>
+                <option value="draven">Draven</option>
+                <option value="irelia">Irelia</option>
+                <option value="jhin">Jhin</option>
+                <option value="khazix">Kha'Zix</option>
+                <option value="orianna">Orianna</option>
+                <option value="renataglasc">Renata Glasc</option>
+                <option value="seraphine">Seraphine</option>
+                <option value="sivir">Sivir</option>
+                <option value="vi">Vi</option>
+            </select>
+
+            <h2>Campeón de costo 5</h2>
+            <select name="champ5" id="champ5">
+                <option disabled selected>Seleccione un campeón de costo 5</option>
+                <option value="galio">Galio (socialité/colossus/bodyguard</option>
+                <option value="jayce">Jayce</option>
+                <option value="jinx">Jinx</option>
+                <option value="kaisa">Kai'sa</option>
+                <option value="silco">Silco</option>
+                <option value="tahmkench">Tahm Kench</option>
+                <option value="veigar">Veigar</option>
+                <option value="viktor">Viktor</option>
+                <option value="zeri">Zeri</option>
+            </select>
+        </form>
+        <button onclick="sub()">Prueba</button>
+    </section>
+
+    <section class="champcost">
+        <h2>Campeones de costo 1</h2>
+        <article>
+            <div class="card">
+                <img src="img/Brand.png" alt="">
+                <div class="card-info">
+                <img src="img/brand1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Caitlyn.png" alt="">
+                <div class="card-info">
+                <img src="img/cait1.png" alt="">
+                </div>
+            </div>
+                
+            <div class="card">
+                <img src="img/Camille.png" alt="">
+                <div class="card-info">
+                <img src="img/camille1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Darius.png" alt="">
+                <div class="card-info">
+                <img src="img/darius1.jpg" alt="">
+                </div>
+            </div>
+            <img src="img/Ezreal.png" alt=""><img src="img/Illaoi.png" alt=""><img src="img/JarvanIV.png" alt=""><img src="img/Kassadin.png" alt=""><img src="img/Nocturne.png" alt=""><img src="img/Poppy.png" alt=""><img src="img/Singed.png" alt=""><img src="img/Twitch.png" alt=""><img src="img/Ziggs.png" alt="">
+        </article>
+    </section>
+
     </main>
     <script src="script.js"></script>
 </body>

@@ -22,47 +22,64 @@
 
 // Foundamentals P.4
 
-let btn = document.getElementById('quizBtn');
-btn.addEventListener('click', osu);
+// let btn = document.getElementById('quizBtn');
+// btn.addEventListener('click', osu);
 
-function osu() {
-let usu = prompt("Ingrese un campeón de TFT (solo minúsculas, sin espacios y sin apóstrofes)");
+// function osu() {
+// let usu = prompt("Ingrese un campeón de TFT (solo minúsculas, sin espacios y sin apóstrofes)");
 
-if (usu == "talon" || usu == "leona" || usu == "twitch" || usu == "ekko" || usu == "khazix" || usu == "nocturne" || usu == "syndra") {
-    alert("Debonair Assasin");
-} else if (usu == "poppy" || usu == "ziggs" || usu == "corki" || usu == "vex" || usu == "gnar" || usu == "lulu" || usu == "veigar") {
+// if (usu == "talon" && usu == "leona" && usu == "twitch" && usu == "ekko" && usu == "khazix" && usu == "nocturne" && usu == "syndra") {
+//     alert("Debonair Assasin");
+// } else if (usu == "poppy" && usu == "ziggs" && usu == "corki" && usu == "vex" && usu == "gnar" && usu == "lulu" && usu == "veigar") {
+//     alert("Yordles");
+// } else if (usu == "ashe" && usu == "darius" && usu == "zyra" && usu == "morgana" && usu == "braum" && usu == "ahri" && usu == "orianna") {
+//     alert("Syndicate Snipers");
+// } else if (usu == "alistar" && usu == "chogath" && usu == "kaisa" && usu == "kassadin" && usu == "malzahar" && usu == "reksai") {
+//     alert("Mutant Colossus");
+// } else if (usu == "sejuani" && usu == "tahmkench") {
+//     alert ("Scholar Bruisers");
+// } else if (usu == "blitzcrank" && usu == "galio") {
+//     alert("Bodyguard Colossus");
+// } else if (usu == "brand" && usu == "jarvan") {
+//     alert("early, no uses esa mierda para una comp");
+// } else if (usu == "caitlyn" && usu == "ezreal" && usu == "jayce" && usu == "jhin" && usu == "seraphine" && usu == "vi" && usu == "zilean") {
+//     alert("Clockwork Innovators");
+// } else if (usu == "draven" && usu == "camille") {
+//     alert("Draven & Friends");
+// } else if (usu == "gangplank" && usu == "quinn" && usu == "illaoi" && usu == "miss fortune") {
+//     alert("Mercenary");
+// } else if (usu == "irelia" && usu == "sivir") {
+//     alert("Scrap Stricker");
+// } else if (usu == "jinx" && usu == "silco") {
+//     alert("Casi cualquier comp");
+// } else if (usu == "lucian") {
+//     alert("Twinshot");
+// } else if (usu == "renataglasc" && usu == "singed" && usu == "tryndamere" && usu == "viktor" && usu == "warwick" && usu == "zac") {
+//     alert("Chemtech Bruisers");
+// } else if (usu == "senna") {
+//     alert("Para hacer giladas con Socialité");
+// } else if (usu == "swain") {
+//     alert("Arcanist (no uses esta mierda)");
+// } else if (usu == "zeri") {
+//     alert("Syndicate Debonairs");
+// } else {
+//     alert("Ni idea bro, fijate de escribir bien sin espacios, minúsculas o apóstrofes. Por ej: Cho'Gath → chogath")
+// }
+// }
+function sub(){
+let champ1 = null;
+
+champ1 = document.getElementsByName("champ1")[0].value;
+champ1 = document.getElementsByName("champ2")[1].value;
+champ1 = document.getElementsByName("champ3")[2].value;
+champ1 = document.getElementsByName("champ4")[3].value;
+champ1 = document.getElementsByName("champ5")[4].value;
+
+let yordles = ["ziggs", "lulu", "gnar", "vi", "veigar"];
+
+if (champ1 == yordles) {
     alert("Yordles");
-} else if (usu == "ashe" || usu == "darius" || usu == "zyra" || usu == "morgana" || usu == "braum" || usu == "ahri" || usu == "orianna") {
-    alert("Syndicate Snipers");
-} else if (usu == "alistar" || usu == "chogath" || usu == "kaisa" || usu == "kassadin" || usu == "malzahar" || usu == "reksai") {
-    alert("Mutant Colossus");
-} else if (usu == "sejuani" || usu == "tahmkench") {
-    alert ("Scholar Bruisers");
-} else if (usu == "blitzcrank" || usu == "galio") {
-    alert("Bodyguard Colossus");
-} else if (usu == "brand" || usu == "jarvan") {
-    alert("early, no uses esa mierda para una comp");
-} else if (usu == "caitlyn" || usu == "ezreal" || usu == "jayce" || usu == "jhin" || usu == "seraphine" || usu == "vi" || usu == "zilean") {
-    alert("Clockwork Innovators");
-} else if (usu == "draven" || usu == "camille") {
-    alert("Draven & Friends");
-} else if (usu == "gangplank" || usu == "quinn" || usu == "illaoi" || usu == "miss fortune") {
-    alert("Mercenary");
-} else if (usu == "irelia" || usu == "sivir") {
-    alert("Scrap Stricker");
-} else if (usu == "jinx" || usu == "silco") {
-    alert("Casi cualquier comp");
-} else if (usu == "lucian") {
-    alert("Twinshot");
-} else if (usu == "renataglasc" || usu == "singed" || usu == "tryndamere" || usu == "viktor" || usu == "warwick" || usu == "zac") {
-    alert("Chemtech Bruisers");
-} else if (usu == "senna") {
-    alert("Para hacer giladas con Socialité");
-} else if (usu == "swain") {
-    alert("Arcanist (no uses esta mierda)");
-} else if (usu == "zeri") {
-    alert("Syndicate Debonairs");
 } else {
-    alert("Ni idea bro, fijate de escribir bien sin espacios, minúsculas o apóstrofes. Por ej: Cho'Gath → chogath")
+    alert("No se encuentra registrado");
 }
 }
